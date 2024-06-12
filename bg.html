@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SHOOLESS</title>
+</head>
+  <style>
+    img {
+      display: none;
+    }
+  </style>
+
+<body>
+  <img src="img/sh1.png" id="logo" 
+    data-gravity="0.01"
+
+    alt="Logo" />
+
+  <script src="https://nextparticle.nextco.de/nextparticle.min.js"></script>
+  <script>
+    nextParticle = new NextParticle({
+      image: document.all.logo,
+      width: window.innerWidth,
+      height: window.innerHeight,
+      maxWidth: window.innerWidth * .5,
+      particleGap: 1,
+      dataNoise: 1
+    });
+    window.onresize = function () {
+      if (window.innerWidth > 600) {
+        nextParticle.width = window.innerWidth - 20;
+        nextParticle.height = window.innerHeight - 20;
+        nextParticle.start();
+      }
+    };
+  </script>
+</body>
+
+</html>
