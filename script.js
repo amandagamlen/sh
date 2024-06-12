@@ -31,7 +31,7 @@ $(document).ready(function () {
   try {
     $('main').ripples({
       resolution: 512,
-      dropRadius: 20,
+      dropRadius: 30,
       perturbance: 0.04,
     });
   }
