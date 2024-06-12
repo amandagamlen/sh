@@ -555,8 +555,8 @@ img {
   z-index: 1000;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.46124387254901966) 0%, rgba(0, 0, 0, 0.6853335084033614) 23%, rgba(0, 0, 0, 1) 47%);
+  background: rgba(0, 0, 0, 0.8);
+/*   background: radial-gradient(circle, rgba(0, 0, 0, 0.46124387254901966) 0%, rgba(0, 0, 0, 0.6853335084033614) 23%, rgba(0, 0, 0, 1) 47%); */
   overflow-y: hidden;
   transition: 0.5s;
 }
