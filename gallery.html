@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SHOOLESS</title>
+   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kag4elt.css">
+  <link href="https://db.onlinewebfonts.com/a/Ah3yF1zAxYBkk2bmbIgEp2M7ZPqM52mitPJKY1Yn9MAtV0An6aMIh1INjd96Z3VjgVw3812MP3L0R3eMyITJ8eyMoWCa52vqgeAL17nY" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="scrollCue.css">
+
+</head>
+
+<body>
+
+   <!-- Top navigation -->
+    <div class="topnav" id="myTopnav">
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="index.html" class="active">SHOOLESS</a>
+      </div>
+
+      <!-- Left-aligned links (default) -->
+
+      <!-- Trigger/Open The Modal -->
+      <a id="myBtn">Bio</a>
+      <a href="music.html">Music</a>
+      <a onclick="openNav()">Stream</a>
+
+
+
+
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <a href="" target="_blank">EPK</a>
+         <a href="#" class="current">Gallery</a>
+        <a href="mailto:shoolessband@gmail.com">Contact</a>
+      </div>
+      <div id="menu-button" class="menu-button">
+
+      <a id="menu-button-link" href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        &#9776;
+      </a> </div>
+    </div>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a target="_blank" href= "https://open.spotify.com/artist/5p2oEckUmp90qHxlA7S04Q?si=4j9NUP-GSZO93ibpaSeKpw">Spotify</a>
+      <a target="_blank" href="https://shooless.bandcamp.com/album/shooless">Bandcamp</a>
+      <a target="_blank"href="https://on.soundcloud.com/QHtLLLejSaa7tQf58">Soundcloud</a>
+      <a target="_blank"href="https://music.apple.com/nz/artist/shooless/1618035089">Apple Music</a>
+    </div>
+    <div class="container"> 
+      <iframe class="responsive-iframe" src="bg.html" title="description"></iframe>
+    </div>
+  </div>
+     <div class="gradient" id="bg">
+
+       <!-- The Bio Modal -->
+       <div id="myModal" class="modal">
+         <video autoplay muted loop id="myVideo" preload="auto">
+               <source src="https://onedrive.live.com/download?resid=2626AD7AB569F4B8%21108&authkey=!AKP3H2c5HpRSQws" type="video/mp4">
+         </video>
+         <!-- Modal content -->
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <div class="center-text">
+             <br>
+               <h2>About</h2>
+              <br>
+             <p>Shooless brings a sound and finesse that defies the status quo, from soaring rock to delicate jazz, embodying authenticity and sonic exploration.</p><br>
+             <p>Led by Guy Yarrall and Freya Pinkerton on vocals, Shooless is fueled by William Abraham on bass, Jordan Neal on drums, and Locky Buchanan on lead guitar. What started with spontaneous jams in a West Auckland storage unit has blossomed into a dynamic musical force, inspired by artists such as Jeff Buckley, King Krule, Patti Smith, Mastadon, Jefferson Airplane, Rage Against the Machine, and PJ Harvey. </p><br>
+             <p>They frequent venues across the Ta<span class="macron">&#772;</span>maki Makaurau live scene, captivating audiences with their energetic performances. And with highly anticipated shows across Aotearoa they're an act you don’t want to miss.</p><br>
+             <p>Their latest single 'Sunsets' is an absorbing preview of what's to come from their forthcoming album. Each track promises to unravel a narrative of personal struggle, self-reflection, and eventual resolution.</p>
+           </div>
+
+           </div>
+          </div>
+
+       <div class="masonry" data-cues="fadeIn">
+           <div class="mItem">
+             <img src="https://i.ibb.co/XxSFtz8/img55.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/yRY8GfD/img46.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/Zx3RgyK/img15.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/nCXF9Vc/img52.jpg">
+           </div>
+
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/yfmLkL7/img26.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/k5f82JV/img54.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/3pVPFyK/img14.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/8cN0fqf/img2.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/VQt4QXf/img50.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/NTmv9bb/img5.jpg">
+           </div>
+
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/xC1Wwb3/img10.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/VmfR4z0/img34.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/ZXNPTKG/img53.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/vhWSgY2/3941-E17-EC2862390-E7-EA24-E09-F3-C8-CAE-video-dashinit.gif">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/0KW28PR/img4.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/wcSmQ0F/img56.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/1RJxH1t/img11.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/mczpSG8/img8.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/KNZvngt/img23.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/7nw6vRs/img20.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/jJsL0Ws/img24.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/NYrPqFg/img7.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/r6SpBzH/img44.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/WFNL258/img32.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/C1TcC4q/img22.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/txdfh20/img16.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/kg7ZXdt/img27.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/jbL57W4/img3.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/LvFNjFw/img33.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/BKDJXRr/img30.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/NFkkgdK/img37.png">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/jgWDjnG/img28.jpg">
+           </div>
+
+
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/wYGLb66/img43.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/TPpzKh4/img6.jpg">
+           </div>
+           <div class="mItem">
+             <img src="https://i.ibb.co/fn9WV07/img19.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/LgbWZMF/img18.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/8st5Tgv/img31.jpg">
+           </div>
+
+           <div class="mItem">
+             <img src="https://i.ibb.co/jzZvzHZ/img12.jpg">
+           </div>
+
+         </div>
+
+
+
+
+
+       
+       <div class="footer">
+         <!-- <a href="#home">Link</a>
+         <div class="footer-right">
+            <a href="#home">Link</a>
+          </div> -->
+         <div class="center">
+         <div class="icon-bar">
+           <a target="_blank" href="https://www.instagram.com/shooless_band/"><i class="fa fa-instagram"></i></a>
+           <a target="_blank" href="https://shooless.bandcamp.com/album/shooless"><i class="fa fa-bandcamp"></i></a> 
+            <a target="_blank" href="https://open.spotify.com/artist/5p2oEckUmp90qHxlA7S04Q?si=4j9NUP-GSZO93ibpaSeKpw"><i class="fa fa-spotify"></i></a> 
+              <a target="_blank" href="https://youtube.com/channel/UCSiPMPhBcKuW6uEUSa3tvvQ?si=33OEuWdebHv86dBB"><i class="fa fa-youtube"></i></a>
+
+
+         </div>
+         </div>
+       </div>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="jquery.ripples-min.js"></script>
+  <script src="script.js"></script>
+
+
+  <script src="script.js"></script>
+  <script src="scrollCue.min.js"></script>
+  <script>scrollCue.init();</script>
+</body>
+
+</html>
