@@ -171,15 +171,14 @@ h3 {
 
 #menu-button-link {
   font-size: 1.5em;
-
-
 }
 
 
 
 
 @media screen and (max-width: 600px) {
-
+  .topnav {top: .5rem
+  }
   .topnav a:not(.active),
   .topnav-right {
     float: none;
