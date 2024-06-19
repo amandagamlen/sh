@@ -399,6 +399,7 @@ img {
   display: inline-block;
   margin-bottom: 16px;
   width: 100%;
+  filter: grayscale(100%);
 }
 
 @media (max-width: 1199px) {
