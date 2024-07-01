@@ -34,38 +34,38 @@ $(document).ready(function () {
   // Check if the device is a mobile device
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
- $(document).ready(function () {
-  // Enhanced check for mobile devices including Safari
-  var isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  // Set different settings based on device type
+  var settings = isMobile ? {
+    resolution: 256,  // Lower resolution for mobile
+    dropRadius: 20,   // Smaller drop radius for mobile
+    perturbance: 0.02 // Less perturbance for mobile
+  } : {
+    resolution: 512,
+    dropRadius: 30,
+    perturbance: 0.04
+  };
 
-  // Only initialize ripples if not on a mobile device
-  if (!isMobile) {
-    try {
-      $('main').ripples({
-        resolution: 512,
-        dropRadius: 30,
-        perturbance: 0.04,
-      });
-    } catch (e) {
-      $('.error').show().text(e);
-    }
-
-    $('.js-ripples-disable').on('click', function () {
-      $('main').ripples('destroy');
-      $(this).hide();
-    });
-
-    $('.js-ripples-play').on('click', function () {
-      $('main').ripples('play');
-    });
-
-    $('.js-ripples-pause').on('click', function () {
-      $('main').ripples('pause');
-    });
-  } else {
-    console.log("Ripple effect disabled on mobile devices");
+  try {
+    $('main').ripples(settings);
   }
+  catch (e) {
+    $('.error').show().text(e);
+  }
+
+  $('.js-ripples-disable').on('click', function () {
+    $('main').ripples('destroy');
+    $(this).hide();
+  });
+
+  $('.js-ripples-play').on('click', function () {
+    $('main').ripples('play');
+  });
+
+  $('.js-ripples-pause').on('click', function () {
+    $('main').ripples('pause');
+  });
 });
+
 
 
 
