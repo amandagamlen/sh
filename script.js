@@ -14,17 +14,20 @@ function toggleMenu() {
    }
  }
 
-$menuButtonLink = $('#menu-button-link');
-let isMenuOpen = false;
+$(document).ready(function () {
+  var $menuButtonLink = $('#menu-button-link');
+  var isMenuOpen = false; // Declare isMenuOpen in the correct scope
 
-$(document).on('click', '#menu-button', function(event) {
-  isMenuOpen = !isMenuOpen;
+  // Event delegation to ensure the event works correctly
+  $(document).on('click', '#menu-button', function(event) {
+    isMenuOpen = !isMenuOpen;
 
-  if (isMenuOpen) {
-    $menuButtonLink.text($menuButtonLink.text().replace(/☰/, "x"));
-  } else {
-    $menuButtonLink.text($menuButtonLink.text().replace(/x/, "☰"));
-  }
+    if (isMenuOpen) {
+      $menuButtonLink.text($menuButtonLink.text().replace(/☰/, "x"));
+    } else {
+      $menuButtonLink.text($menuButtonLink.text().replace(/x/, "☰"));
+    }
+  });
 });
 
 $(document).ready(function () {
