@@ -226,6 +226,8 @@ h3 {
     float: none;
     display: block;
     text-align: left;
+    font-family: "MagdaWeb W03 Regular";
+     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   }
 
   .topnav.responsive .topnav-right {
@@ -234,6 +236,7 @@ h3 {
 
   .topnav.responsive a.active {
     display: block;
+    font-family: "BlurWeb-Light W03 Regular";
     /* float: left; */
   }
 }
