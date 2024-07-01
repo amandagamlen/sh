@@ -31,6 +31,10 @@ $(document).ready(function () {
   // Check if the device is a mobile device
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
+ $(document).ready(function () {
+  // Enhanced check for mobile devices including Safari
+  var isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
   // Only initialize ripples if not on a mobile device
   if (!isMobile) {
     try {
@@ -39,8 +43,7 @@ $(document).ready(function () {
         dropRadius: 30,
         perturbance: 0.04,
       });
-    }
-    catch (e) {
+    } catch (e) {
       $('.error').show().text(e);
     }
 
@@ -60,6 +63,7 @@ $(document).ready(function () {
     console.log("Ripple effect disabled on mobile devices");
   }
 });
+
 
 
 // Get the modal
