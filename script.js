@@ -28,32 +28,39 @@ $(document).on('click', '#menu-button', function(event) {
 });
 
 $(document).ready(function () {
-  try {
-    $('main').ripples({
-      resolution: 512,
-      dropRadius: 30,
-      perturbance: 0.04,
+  // Check if the device is a mobile device
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // Only initialize ripples if not on a mobile device
+  if (!isMobile) {
+    try {
+      $('main').ripples({
+        resolution: 512,
+        dropRadius: 30,
+        perturbance: 0.04,
+      });
+    }
+    catch (e) {
+      $('.error').show().text(e);
+    }
+
+    $('.js-ripples-disable').on('click', function () {
+      $('main').ripples('destroy');
+      $(this).hide();
     });
+
+    $('.js-ripples-play').on('click', function () {
+      $('main').ripples('play');
+    });
+
+    $('.js-ripples-pause').on('click', function () {
+      $('main').ripples('pause');
+    });
+  } else {
+    console.log("Ripple effect disabled on mobile devices");
   }
-  catch (e) {
-    $('.error').show().text(e);
-  }
-
-  $('.js-ripples-disable').on('click', function () {
-    $('main').ripples('destroy');
-    $(this).hide();
-  });
-
-  $('.js-ripples-play').on('click', function () {
-    $('main').ripples('play');
-  });
-
-  $('.js-ripples-pause').on('click', function () {
-    $('main').ripples('pause');
-  });
-
-
 });
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
