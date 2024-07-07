@@ -528,6 +528,7 @@ img {
 
 .icon-bar {
   width: 100%;
+   padding-bottom: 1rem;
   /* background-color: #555; */
   overflow: auto;
 }
